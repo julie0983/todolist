@@ -1,0 +1,14 @@
+<div style="text-align:center">
+    <div *ngIf="todo">
+    
+      <h2>Done</h2>
+      <!--<div><span>id: </span>{{todo.id}}</div>-->
+      <div style="text-align:center">
+        <label>
+            <input [(ngModel)]="todo.matter+todo.id" placeholder="matter">
+        </label>
+      </div>
+    </div>
+      <button (click)="OK()">OK</button>
+    </div>
+    

@@ -1,0 +1,22 @@
+<!--<div>{{todo.matter}}</div>-->
+<div style="text-align:center">
+  <label class="todoadd">To do list:
+    <input #matters />
+  </label>
+  <button (click)="add(matters.value); matters.value=''">
+    add
+  </button>
+
+
+  <ul class="todos">
+    <li *ngFor="let todo of todos">
+        <label class="todomatter">{{todo.matter}}</label>
+      <button class="delete" title="delete" (click)="delete(todo)">x</button>
+      <input class="done" type="checkbox" (change)="done($event)" title="done">
+      <label class="checkdone">DONE!!<a routerLink="/detail/{{todo.id}}" title="edit" attr.id="edit{{todo.id}}" class="ed"><img src="/assets/images/outline_create.png"></a></label>
+
+    </li>
+  </ul>
+
+
+</div>

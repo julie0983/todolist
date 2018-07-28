@@ -1,0 +1,14 @@
+<div style="text-align:center">
+<div *ngIf="todo">
+
+  <h2>Edit</h2>
+  <!--<div><span>id: </span>{{todo.id}}</div>-->
+  <div style="text-align:center">
+    <label>To do list:
+      <input [(ngModel)]="todo.matter" placeholder="matter"/>
+    </label>
+  </div>
+</div>
+<button (click)="goBack()">go back</button>
+<button (click)="save()">save</button>
+</div>

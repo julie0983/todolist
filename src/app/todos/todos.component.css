@@ -1,0 +1,110 @@
+ul.todos{
+  display: table;
+  margin: 0 auto;
+}
+
+label.todoadd{
+    font-size: 1em;
+    font-family: sans-serif;
+    color:  #127796;
+    margin-bottom: 50;
+}
+
+input{
+  width:16em;
+  height:1.5em;
+}
+
+.todos {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+
+  .todos li {
+    position: relative;
+    background-color: rgba(224, 244, 250, 0.781);
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .todos li:hover {
+    color: rgb(22, 116, 163);
+    background-color: rgba(197, 238, 248, 0.575);
+    left: .1em;
+  }
+   
+  .todos a {
+    color: rgb(32, 108, 138);
+    font-family: sans-serif;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    width: 250px;
+  }
+  .todos a:hover {
+    color:#607D8B;
+  }
+
+  label.todomatter{
+    color: rgb(32, 108, 138);
+    font-family: sans-serif;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    width: 250px;
+  }
+  label.todomatter a:hover{
+    color:#607D8B;
+  }
+
+  img{
+    position: relative;
+    height: 28px;
+    width:  28px;
+    top: -22px;
+    left: 315px;
+  }
+
+  button {
+    background-color: rgb(224, 244, 250);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    font-family: Arial;
+  }
+  button:hover {
+    background-color: rgb(197, 238, 248);
+  }
+  button.delete {
+    position: relative;
+    left: 305px;
+    top: -25px;
+    background-color: rgb(51, 128, 190) !important;
+    color: white;
+  }
+
+  input.done{
+    position: relative;
+    left: -215px;
+    top: -20px;
+  }
+
+  label.checkdone{
+    color:rgba(255, 0, 0, 0);
+    font-family: sans-serif;
+    position: relative;
+    top: -48px;
+    left: -160px;
+  }
+  :checked+label.checkdone{
+    color: rgb(255, 0, 200);
+    pointer-events: none;
+  }
+  :checked+a.ed{
+    pointer-events: none;
+  }

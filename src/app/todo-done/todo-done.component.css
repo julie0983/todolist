@@ -1,0 +1,26 @@
+h2 {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    color: #30c1ec;
+    margin-bottom: 0;
+}
+button {
+    background-color: rgb(224, 244, 250);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    font-family: sans-serif;
+  }
+   
+  button:hover {
+    background-color: rgb(197, 238, 248);
+  }
+  input{
+    border: none transparent;
+    outline: none;
+    height: 8em;
+    font-size: 1em;
+    font-family: sans-serif;
+  }
