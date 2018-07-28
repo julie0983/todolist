@@ -30,7 +30,6 @@ export class TodosComponent implements OnInit {
 
   ngOnInit() {
     this.getTodos();
-    //this.getTodo(); //perhapes should delete this code
   }
   getTodos(): void{
     this.todoService.getTodos().subscribe(todos=>this.todos=todos);
